@@ -1,7 +1,5 @@
-const tab = [1, 4]
+const tab1 = [1, 6, 3, 4]
+const tab2 = [6, 3, 7, 8, 9]
 
-let sum = 0
-for (var i = tab[0]; i <= tab[1]; i++) {
-	sum  +=  i
-}
-console.log(sum)
+let diff = tab1.filter(e => !tab2.includes(e)).concat(tab2.filter(e => !tab1.includes(e)))
+console.log(diff)
