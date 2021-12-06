@@ -1,3 +1,2 @@
-const tab = ['b', 'c', 'd']
-let newTab = ['a', ...tab, 'e']
-console.log(tab, newTab)
+const tab = ['a', 'b', 'c', 'd']
+console.log(tab, tab.indexOf('b'))
