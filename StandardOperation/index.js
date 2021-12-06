@@ -4,4 +4,6 @@ const obj = {
   c: 3
 }
 
-console.log(obj['b'])
+delete obj.b
+
+console.log(obj)
