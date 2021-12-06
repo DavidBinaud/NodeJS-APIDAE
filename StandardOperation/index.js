@@ -1,3 +1,3 @@
-const tab = ['a', 'b', 'c', 'd','e','f']
-let newTab = tab.slice(1,-1)
+const tab = ['b', 'c', 'd']
+let newTab = ['a', ...tab, 'e']
 console.log(tab, newTab)
