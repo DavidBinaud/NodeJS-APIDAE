@@ -1,11 +1,14 @@
-const tab = [1, 2, 3, 1, 2, 3]
+const tab = [1, 2, 3, 4, 5]
 
-// TODO function remove
-
-let remove = function(tab, ...Args){
-	Args.forEach(value => tab = tab.filter(e => e != value))
-	return tab
+let f  =  function(tab,  chunkSize){
+	let res = []
+	for (var i = 0; i < tab.length; i++) {
+		if(i % chunkSize === 0){
+			res.push([])
+		}
+		res[res.length-1].push(tab[i])
+	}
+	return res
 }
 
-const result = remove(tab, 2, 3)
-console.log(result)
+console.log(f(tab, 2))
