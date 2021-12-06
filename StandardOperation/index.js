@@ -1,10 +1,12 @@
 const obj = {
   a: 1,
   b: 2,
-  c: 3
+  c: {
+    d: 4,
+    f: 5
+  }
 }
 
-obj.d = 4
-obj.e = 5
+obj.c.f = 10
 
 console.log(obj)
