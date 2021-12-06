@@ -1,11 +1,14 @@
 const obj = {
-  a: 1,
-  b: 2,
-  c: 3
+  a: true,
+  b: true,
+  c: false
 }
 
-if(obj.hasOwnProperty('c')){
-	obj.d = 4
+numberOfTrue  = 0
+for(property in obj){
+	if(obj[property] == true){
+		numberOfTrue++
+	}
 }
 
-console.log(obj)
+console.log(obj, numberOfTrue)
