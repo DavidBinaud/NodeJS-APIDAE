@@ -1,14 +1,9 @@
 const obj = {
-  a: true,
-  b: true,
-  c: false
+  a: 1,
+  b: 2,
+  c: 3
 }
 
-numberOfTrue  = 0
-for(property in obj){
-	if(obj[property] == true){
-		numberOfTrue++
-	}
-}
+let tab = Object.keys(obj)
 
-console.log(obj, numberOfTrue)
+console.log(obj, tab)
