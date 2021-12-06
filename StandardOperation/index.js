@@ -4,6 +4,8 @@ const obj = {
   c: 3
 }
 
-delete obj.b
+if(obj.hasOwnProperty('c')){
+	obj.d = 4
+}
 
 console.log(obj)
