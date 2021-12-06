@@ -1,12 +1,7 @@
 const obj = {
   a: 1,
   b: 2,
-  c: {
-    d: 4,
-    f: 5
-  }
+  c: 3
 }
 
-obj.c.f = 10
-
-console.log(obj)
+console.log(obj['b'])
