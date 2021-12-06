@@ -4,6 +4,6 @@ const obj = {
   c: 3
 }
 
-let tab = Object.keys(obj)
+let tab = Object.values(obj)
 
 console.log(obj, tab)
