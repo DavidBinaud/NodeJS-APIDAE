@@ -1,8 +1,10 @@
-const students = [
-  { name: 'John', money: 10 },
-  { name: 'Todd', money: 25 },
-  { name: 'Jack', money: 33 },
-  { name: 'Walter', money: 18 }
-]
+const obj = {
+  a: 1,
+  b: 2,
+  c: 3
+}
 
-console.log(students.reduce((acc,e)=>acc + parseInt(e.money),0))
+obj.d = 4
+obj.e = 5
+
+console.log(obj)
