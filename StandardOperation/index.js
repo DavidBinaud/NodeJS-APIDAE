@@ -1,5 +1,3 @@
 const tab = ['a', 'b', 'c', 'd']
-tab.pop()
-console.log(tab)
-tab.shift()
+tab.splice(1,2)
 console.log(tab)
