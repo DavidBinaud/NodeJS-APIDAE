@@ -1,4 +1,5 @@
-const tab = ['c', 'd']
-tab.unshift('a','b')
-tab.push('e')
+const tab = ['a', 'b', 'c', 'd']
+tab.pop()
+console.log(tab)
+tab.shift()
 console.log(tab)
